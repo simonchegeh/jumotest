@@ -57,7 +57,7 @@ public class CSVUtil {
 
     }
 
-    public static EmployeeAirtime getEmployeeAirtime(String[] s) {
+    private static EmployeeAirtime getEmployeeAirtime(String[] s) {
         if (s.length >= 3) {
             return new EmployeeAirtime(s[0], s[1], "KSH", Double.valueOf(s[2]));
         } else {
