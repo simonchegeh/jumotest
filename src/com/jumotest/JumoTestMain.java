@@ -41,10 +41,10 @@ public class JumoTestMain {
                 recipientsJSONArray.put(jsonObject);
             }
 
-            String recipientStringFormat = recipientsJSONArray.toString();
+            String airtimeReciepientsFormattedStr = recipientsJSONArray.toString();
 
             AfricasTalkingGateway africasTalkingGateway = new AfricasTalkingGateway(username, apiKey);
-            JSONArray results = africasTalkingGateway.sendAirtime(recipientStringFormat);
+            JSONArray results = africasTalkingGateway.sendAirtime(airtimeReciepientsFormattedStr);
 
             for (int i = 0; i < results.length(); i++) {
 
